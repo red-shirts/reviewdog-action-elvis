@@ -41,7 +41,7 @@ jobs:
       - uses: actions/checkout@v1
       - name: Install Dependencies
         run: |
-          rebar do get-deps, compile
+          rebar3 do get-deps, compile
       - name: elvis
         uses: hauleth/reviewdog-action-elvis@v1
         with:
