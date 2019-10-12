@@ -10,11 +10,11 @@ jobs:
       - name: Check out code.
         uses: actions/checkout@v1
       - name: elvis
-        uses: hauleth/reviewdog-action-elvis@master
+        uses: red-shirts/reviewdog-action-elvis@master
         with:
           github_token: ${{ secrets.github_token }}
       - name: elvis-pr-review
-        uses: hauleth/reviewdog-action-elvis@master
+        uses: red-shirts/reviewdog-action-elvis@master
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
