@@ -1,7 +1,7 @@
 # GitHub Action: Run elvis with reviewdog
 
-[![Docker Image CI](https://github.com/hauleth/reviewdog-action-elvis/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/hauleth/reviewdog-action-elvis/actions)
-[![Release](https://img.shields.io/github/release/hauleth/reviewdog-action-elvis.svg?maxAge=43200)](https://github.com/hauleth/reviewdog-action-elvis/releases)
+[![Docker Image CI](https://github.com/red-shirts/reviewdog-action-elvis/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/red-shirts/reviewdog-action-elvis/actions)
+[![Release](https://img.shields.io/github/release/red-shirts/reviewdog-action-elvis.svg?maxAge=43200)](https://github.com/red-shirts/reviewdog-action-elvis/releases)
 
 This action runs [elvis](https://github.com/inaka/elvis) with
 [reviewdog](https://github.com/reviewdog/reviewdog) on pull requests to improve
@@ -43,7 +43,7 @@ jobs:
         run: |
           rebar3 compile
       - name: elvis
-        uses: hauleth/reviewdog-action-elvis@v1
+        uses: red-shirts/reviewdog-action-elvis@v1
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review # Change reporter.
